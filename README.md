@@ -73,6 +73,6 @@ This file includes:
 | File                            | Description                                                                 |
 |-------------------------------- |---------------------------------------------------------------------------- |
 | `academy_scraper.py`            | Downloads all academy data from the certification API.                      |
-| `data_enricher.py`              | Enriches scraped CSV by querying Serper API and appending URLs.             |
+| `website_links_enricher.py`     | Enriches scraped CSV by querying Serper API and appending URLs.             |
 | `academy_database_full.csv`     | Raw scraped data (Step 1).                                                  |
 | `academy_database_enriched.csv` | Final enriched dataset (Step 2).                                            |
