@@ -23,3 +23,29 @@ Install the required Python packages:
 
 ```bash
 pip install requests pandas
+```
+
+## 🔑 Serper API Setup
+
+* Visit https://serper.dev and create a free account.
+* After email verification, you receive 2,500 free queries.
+* Copy your personal API Key.
+* Insert it into data_enricher.py:
+
+```bash
+API_KEY = "your_key_goes_here"
+```
+
+## 📖 Usage Guide
+
+### Step 1 — Scrape Academy Data
+
+Runs queries against the PZPN certification API and builds the base dataset:
+```bash
+python academy_scraper.py
+```
+
+Output file:
+```bash
+academy_database_full.csv
+```
