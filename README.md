@@ -49,3 +49,30 @@ Output file:
 ```bash
 academy_database_full.csv
 ```
+
+
+### Step 2 — Enrich with Websites & Links
+
+Performs automated Google search queries to find official URLs:
+```bash
+python website_links_enricher.py
+```
+
+Output file:
+```bash
+academy_database_enriched.csv
+```
+
+This file includes:
+* All scraped fields
+* A new column with top-matched website URLs
+
+
+## 📂 Project Structure
+
+| File                            | Description                                                                 |
+|-------------------------------- |---------------------------------------------------------------------------- |
+| `academy_scraper.py`            | Downloads all academy data from the certification API.                      |
+| `data_enricher.py`              | Enriches scraped CSV by querying Serper API and appending URLs.             |
+| `academy_database_full.csv`     | Raw scraped data (Step 1).                                                  |
+| `academy_database_enriched.csv` | Final enriched dataset (Step 2).                                            |
