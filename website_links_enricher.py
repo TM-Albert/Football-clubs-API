@@ -51,7 +51,7 @@ def get_google_links(query):
                 top_links.append(result['link'])
                 
         # Join links with a pipe delimiter for the CSV column
-        return " | ".join(top_links)
+        return " ".join(top_links)
 
     except Exception as e:
         print(f"   ⚠️ API Request Error: {e}")
